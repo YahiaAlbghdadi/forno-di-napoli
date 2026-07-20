@@ -3,3 +3,6 @@ node_modules/
 test-results/
 playwright-report/
 tests/screenshots/
+
+# Sensitive source document (SV-Nummer, private address) — never commit or deploy
+content/gewerbe.jpeg

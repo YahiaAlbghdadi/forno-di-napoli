@@ -645,3 +645,86 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.05em;
 }
 .footer__links a:hover { color: var(--red); }
+
+/* ===== Legal pages ===== */
+.legal-hero {
+  padding: 8.5rem clamp(1.25rem, 4vw, 2.5rem) 3rem;
+  background: var(--paper-deep);
+  border-bottom: 1px solid var(--paper-line);
+}
+.legal-hero .eyebrow { color: var(--red); }
+.legal-hero .eyebrow::before { background: var(--red); }
+.legal-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  color: var(--red-deep);
+  margin: 0.4rem 0 0;
+}
+.legal-hero p {
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin: 0.9rem 0 0;
+}
+
+.legal {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 4.5rem) clamp(1.25rem, 4vw, 2.5rem) clamp(4rem, 8vw, 6rem);
+}
+
+.legal h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--red-deep);
+  margin: 2.4rem 0 0.9rem;
+}
+.legal h2:first-child { margin-top: 0; }
+
+.legal h3 {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--green);
+  margin: 1.6rem 0 0.6rem;
+}
+
+.legal p, .legal li {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.legal ul {
+  padding-left: 1.3rem;
+  margin: 0.6rem 0 1rem;
+}
+.legal li { margin-bottom: 0.4rem; }
+
+.legal a {
+  color: var(--red);
+  text-decoration: underline;
+  text-decoration-color: var(--paper-line);
+  text-underline-offset: 3px;
+}
+.legal a:hover { text-decoration-color: var(--red); }
+
+.legal .fact-card {
+  background: var(--cream);
+  border: 1px solid var(--paper-line);
+  border-left: 4px solid var(--green-bright);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  margin: 1.2rem 0 1.8rem;
+}
+.legal .fact-card p { margin: 0.25rem 0; color: var(--ink); }
+.legal .fact-card p strong { color: var(--ink); font-weight: 600; }
+
+.legal .note {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
